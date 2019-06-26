@@ -11,7 +11,7 @@ public class DBConnect {
 	private static final String jdbcURL = "jdbc:mysql://localhost/denver_crimes";
 	private static HikariDataSource ds;
 	
-	public static Connection getConnection() {
+	public static Connection getConnection(String string) {
 		
 		if (ds == null) {
 			HikariConfig config = new HikariConfig();
